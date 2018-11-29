@@ -1,0 +1,25 @@
+#board{
+    
+    display: flex;
+	flex-wrap: wrap;
+	width: 96vw;
+}
+
+.row{
+    display: flex;
+}
+
+.square{
+    background-image:background-image: linear-gradient(to bottom right, white, grey);
+    height: 12vw;
+    min-width: 12vw;
+    
+}
+
+.square:nth-of-type(2n) {
+    background-image: linear-gradient(gray, black);
+}
+
+.row:nth-of-type(2n) {
+	flex-direction: row-reverse;
+}
